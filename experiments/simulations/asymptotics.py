@@ -3,7 +3,7 @@ Plot exact asymptotics of disagreements and risk.
 '''
 import matplotlib.pyplot as plt
 
-from utils import *
+from helper.utils import *
 
 
 if __name__ == '__main__':

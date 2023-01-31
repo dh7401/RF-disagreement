@@ -1,6 +1,8 @@
 '''
 Plot deviation from the line.
 '''
+import sys 
+sys.path.append('../..')
 import matplotlib.pyplot as plt
 
 from utils import *
@@ -69,7 +71,7 @@ if __name__ == '__main__':
             slope * np.array(SS_disagr_s_list)
         plt.plot(psi_list / phi, SS_deviation, label=f'$\gamma = {gamma}$')
 
-        plt.xlabel('$\psi / \phi$')
-        plt.ylabel('Deviation')
-        plt.legend()
-        plt.show()
+    plt.xlabel('$\psi / \phi$')
+    plt.ylabel('Deviation')
+    plt.legend()
+    plt.show()

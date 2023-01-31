@@ -1,7 +1,8 @@
 '''
 Experiments on real-world datasets.
 '''
-
+import sys 
+sys.path.append('../..')
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -14,7 +15,7 @@ d = 3072
 n = 1000
 
 # Load CIFAR-10-C-Fog (severity 1)
-x_s, y_s, x_t, y_t = load_cifar10c(dir='../wilds/data')
+x_s, y_s, x_t, y_t = load_cifar10c(root_dir='data')
 
 
 shuffle_idx = np.random.permutation(range(x_s.shape[1]))

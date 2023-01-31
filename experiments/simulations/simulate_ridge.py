@@ -1,9 +1,12 @@
 '''
 Simulation for ridge regression
 '''
-from matplotlib import pyplot as plt
+import sys 
+sys.path.append('../..')
+import matplotlib.pyplot as plt
 
 from utils import *
+
 
 n = 1024 # sample size
 d = 512  # input dimension
