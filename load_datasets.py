@@ -63,7 +63,7 @@ def load_tinyimagenetc(root_dir='data', corruption_type='fog', severity=1):
     # Load target images from class 1
     photos_1_t = np.zeros((0,64,64,3))
     for label in classes_1:
-        root_dir_name = f'{root_dir}Tiny-ImageNet-C/{corruption_type}/{severity}/{label}/'
+        root_dir_name = f'{root_dir}/TinyImageNet-C/{corruption_type}/{severity}/{label}/'
         photo_names = listdir(root_dir_name)
         photos_path = [root_dir_name + path for path in photo_names]
         photo_list = []
@@ -75,7 +75,7 @@ def load_tinyimagenetc(root_dir='data', corruption_type='fog', severity=1):
     # Load target images from class 2
     photos_2_t = np.zeros((0,64,64,3))
     for label in classes_2:
-        root_dir_name = f'{root_dir}Tiny-ImageNet-C/{corruption_type}/{severity}/{label}/'
+        root_dir_name = f'{root_dir}/TinyImageNet-C/{corruption_type}/{severity}/{label}/'
         photo_names = listdir(root_dir_name)
         photos_path = [root_dir_name + path for path in photo_names]
         photo_list = []
