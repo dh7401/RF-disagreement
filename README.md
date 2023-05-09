@@ -1,4 +1,4 @@
-# Demystifying Disagreement-on-the-Line in High Dimensions
+# [ICML 2023] Demystifying Disagreement-on-the-Line in High Dimensions
 arXiv link: https://arxiv.org/abs/2301.13371
 
 `experiments/simulations`: Section 3, 4\
